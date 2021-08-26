@@ -1,0 +1,42 @@
+### Prueba
+
+GET http://localhost:5000/api/producto/test
+
+### Nuevo Producto
+
+POST http://localhost:5000/api/producto/nuevo
+Content-Type: application/json
+
+{
+    "título": "Iphone 15",
+    "precio": 10,
+    "descripción": "El celular más mejor y santisima de la gente que adora a la santisima manzana",
+    "colores": ["", "", "black"]
+}
+
+### Todos los Productos
+
+GET http://localhost:5000/api/producto
+
+### Producto por ID
+
+GET http://localhost:5000/api/producto/61132077e424d082bb36f09f
+
+### Editar Producto por Id
+
+PUT http://localhost:5000/api/producto/61132077e424d082bb36f09f
+Content-Type: application/json
+
+{
+    "título": "Editado",
+    "precio": 99,
+    "descripción": "El celular más mejor y santisima de la gente que adora a la santisima manzana"
+}
+
+### Vender un Producto
+
+PUT http://localhost:5000/api/producto/vender/611c643cb125d7ea93c0fe34
+
+### Eliminar Producto por ID
+
+DELETE http://localhost:5000/api/producto/61132077e424d082bb36f09f
